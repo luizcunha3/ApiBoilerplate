@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "export NODE_ENV=development && node index.js",
+    "prod": "export NODE_ENV=production && node index.js",
+    "test": "export NODE_ENV=testing && node index.js",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "swagger-ui-express": "^4.1.6"
   }
 }
